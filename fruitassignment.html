@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transitions - Fruits</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(5, 5, 80);
+            text-decoration: underline;
+            margin-bottom: 30px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .fruits {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        img {
+            width: 200px;
+            height: 160px;
+            border-radius: 10px;
+            transition: transform 1s ease;
+            cursor: pointer;
+        }
+
+        .apple:hover {
+            transform: translateX(100px);
+        }
+
+        .banana:hover {
+            transform: translateX(-100px);
+        }
+
+        .guava:hover {
+            transform: translateY(-100px);
+        }
+
+        .orange:hover {
+            transform: translateY(100px);
+        }
+
+        .mango:hover {
+            transform: translate(100px, -100px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Fruits Transitions</h1>
+
+    <div class="fruits">
+        <img class="apple" src="c:\Users\user\Downloads\OIP.webp" alt="Orange">
+        <img class="banana" src="c:\Users\user\Downloads\OIP (1).webp" alt="Banana">
+        <img class="guava" src="c:\Users\user\Downloads\single-guava-1di3wgxbyu4in869.jpg" alt="Guava">
+        <img class="orange" src="c:\Users\user\Downloads\OIP (2).webp" alt="Apple">
+        <img class="mango" src="c:\Users\user\Downloads\isolated-fruits-one-whole-mango-fruit-isolated-on-white-background-KXD2P5.jpg" alt="Mango">
+    </div>
+
+</body>
+</html>

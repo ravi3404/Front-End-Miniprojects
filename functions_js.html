@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Funtions in Js</title>
+    </head>
+    <body>
+        <h1> Funtions in js</h1>
+        <script>
+            // types of fuctions:-1.normal function 
+            function Hello(){
+                document.write("i am a fuction");
+            };
+            Hello();
+            document.write(Hello());
+            // 2.parameterized function in js
+            function Sum(a,b){
+                return a+b;
+                                
+            };
+            document.write(Sum(10,100));
+            // sum(10,10);  direct calling of function is not position
+            
+            // 3. non-parameterized Arrow function in js
+            // variable name is required
+            let Add=()=>{
+                document.write("arrow function")};
+                Add();
+                document.write(Add());
+            // parameterized Arrow function in js
+            let Addition=(n1,n2)=>{return n1+n2};
+                Addition();
+                document.writeln(Addition(1000,2000));
+</script>
+    </body>
+</html>

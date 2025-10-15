@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> About me </title>
+        <link rel="stylesheet" href="name.css">
+    </head>
+    <body>
+        <h1>About Me</h1>
+        <h2 id ="name">What is your Name??</h2>
+        <p id = "myself">Explain about Yourself!!</p>
+        <button onclick="Text()">U know</button>
+        <script>
+            function Text(){
+                const name = document.getElementById("name");
+                 const myself = document.getElementById("myself");
+                 const body = document.body;
+                name.innerHTML = "My Name is Ravi Saini";
+                name.style.color = "red";
+                myself.style.color = "skyblue";
+                body.style.backgroundColor = "lightyellow";
+                myself.innerHTML = "I am from Rajasthan and I am persuing my MCA from Alliance University";
+            }
+        
+        </script>
+    </body>
+</html>

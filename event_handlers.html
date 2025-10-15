@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Event Handlers in JavaScript</title>
+    </head>
+    <body>
+        <h1> Event Handlers in JavaScript</h1>
+        <button id = "btn">Click me</button>
+        <p id = "para"> Waiting for clicking the button!!</p>
+        <script> 
+            const btn = document.getElementById("btn");
+            const para = document.getElementById("para");
+            function Text(){
+                btn.textContent = "Clicked";
+                para.textContent = "Button is Clicked!!";
+                 para.textContent = " I am Ravi Saini From Rajasthan India";
+            }
+            btn.addEventListener("click", Text);
+
+            // function about(){
+               
+            // }
+            // btn.addEventListener("click",about);
+        </script>
+    </body>
+</html>
