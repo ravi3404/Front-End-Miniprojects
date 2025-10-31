@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Styling & Box Model</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #fafafa;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #444;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    .highlight {
+      background: #ffe8a1;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .demo-box {
+      border: 3px dashed #ccc;
+      padding: 20px;
+      margin: 15px 0;
+      background: #f5f5ff;
+      text-align: center;
+    }
+    p { line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <h1>Styling Text & Box Model</h1>
+  <div class="container">
+    <div class="card">
+      <h2>Text Styling</h2>
+      <p>This is <strong>bold</strong>, <em>italic</em>, and <span class="highlight">highlighted</span> text. You can adjust <code>font-size</code>, <code>color</code>, and <code>line-height</code> to improve readability.</p>
+    </div>
+
+    <div class="card">
+      <h2>Box Model</h2>
+      <p>The box model includes <strong>margin</strong>, <strong>border</strong>, <strong>padding</strong>, and <strong>content</strong>.</p>
+      <div class="demo-box">I have padding, border & margin!</div>
+    </div>
+  </div>
+</body>
+</html>

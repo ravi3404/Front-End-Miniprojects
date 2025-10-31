@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+   
+}
+h2{
+    text-align: center;
+}
+button{
+    margin-left: 700px;
+    padding : 10px 20px
+    border-radius: 10px;
+    background-color: lightblue
+    border:none
+}
+button:hover{
+    background-color: wheat;
+}
+p{
+    text-align: center;
+
+}
+body{
+    background-color: lightgrey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: center;
+}

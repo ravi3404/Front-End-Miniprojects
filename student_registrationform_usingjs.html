@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      background-color: lightblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .form-box {
+      background: wheat;
+      padding: 30px 40px;
+      border: 2px solid black;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid black;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 15px;
+      margin-left: 100px;
+      width: 100px;
+      padding: 8px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-box">
+    <h2>Student Registration Form</h2>
+    <form id="regForm">
+      <label>Reg_id:</label>
+      <input type="alphanumeric"  id="regid" required>
+
+      <label>S_name:</label>
+      <input type="text" id="sname" required>
+
+      <label>S_course:</label>
+      <input type="text" id="scourse" required>
+
+      <label>S_Email:</label>
+      <input type="email" id="semail" required>
+
+      <label>S_phone:</label>
+      <input type="tel" id="sphone" required>
+
+      <label>S_doj (Date of Join):</label>
+      <input type="date" id="sdoj" required>
+
+      <label>S_address:</label>
+      <input type="text" id="saddress" required>
+
+      <button type="button" onclick="Student()">Register</button>
+    </form>
+  </div>
+
+  <script>
+    function Student() {
+      const regid = document.getElementById("regid").value;
+      const name = document.getElementById("sname").value;
+      const course = document.getElementById("scourse").value;
+      const email = document.getElementById("semail").value;
+      const phone = document.getElementById("sphone").value;
+      const doj = document.getElementById("sdoj").value;
+      const address = document.getElementById("saddress").value;
+
+      
+      document.write(`Reg ID: ${regid}`);
+      document.write(`Name: ${name}`);
+      document.write(`Course: ${course}`);
+      document.write(`Email: ${email}`);
+      document.write(`Phone: ${phone}`);
+      document.write(`Date of Join: ${doj}`);
+      document.write(`Address: ${address}`);
+
+      alert("Student registered successfully!");
+      document.getElementById("regForm").reset();
+    }
+  </script>
+</body>
+</html>

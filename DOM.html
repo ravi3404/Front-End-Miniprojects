@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>DOM in JS</title>
+    </head>
+    <body>
+        <h1 id = "head"> Hello DOM  How are you!!</h1>
+        <p id = "para"> I am Dom in JS</p>
+        <button onclick="Text()">Click me</button>
+        <script>
+            function Text(){
+                const head = document.getElementById("head");
+                const para = document.getElementById("para");
+
+                head.innerHTML="I am not GOOD BUDDY!!"
+                head.style.color="red";
+                para.innerHTML="I am DOM IN JS!!"
+                para.style.color="green";
+
+            };
+        
+        </script>
+</html>

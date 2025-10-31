@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Variables & Operators</title>
+    </head>
+    <body>
+        <h1>Variable & Operators</h1>
+        <script>
+             
+            var a=20;
+            let b=5;
+            // b=4; Re-declaration of let variable in not possible only we can assign the value to it
+            var c=3.4;
+            var d="ravi";
+            var e='R';
+            const f=true;
+            // let f=3; Re-declaration & Re-assignment is not possible for const variable
+            let g=["ravi" ,2,3.4,true]
+            let h={
+                id:1,name:"ravi"
+            }
+            document.write("the data type of a is:  ",typeof(a),"<br>");
+            document.write("the data type of b is:  ",typeof(b),"<br>");
+            document.write("the data type of c is:  ",typeof(c),"<br>");
+            document.write("the data type of d is:  ",typeof(d),"<br>");
+            document.write("the data type of e is:  ",typeof(e),"<br>");
+            document.write("the data type of f is:  ",typeof(f),"<br>");
+            document.write("the data type of g is:  ",typeof(g),"<br>");
+            document.write("the data type of h is:  ",typeof(h),"<br><br>");
+
+            console.log("the output of a+b is :",a+b);
+            console.log("the output of a-b is :",a-b);
+            console.log("the output of a*b is :",a*b);
+            console.log("the output of a/b is :",a/b);
+            console.log("the output of a%b is :",a%b);
+            console.log("the output of g is :",g);
+            console.log("the details of first person is  :","Id=",h.id,",name=",h.name);
+            // compare two variables on the basis of their values 
+            console.log("comparison of two variables are",a==b);
+            // compare two variables on the basis of their values and data type also 
+            console.log("comparison of two variables are",a===b);
+
+            document.writeln("the output of a+b is :", a+b+ "<br>");
+            document.writeln("the output of a-b is :"  ,a-b+ "<br>");
+            document.writeln("the output of a*b is :"  ,a*b+ "<br>");
+            document.writeln("the output of a/b is :"  ,a/b+ "<br>");
+            document.writeln("the output of a%b is :"  ,a%b+ "<br>");
+            document.writeln("the output for g is :",g,"<br>")
+            document.writeln("the details of first person is  :","Id=",h.id,",name=",h.name,"<br>");
+            document.writeln("comparison of a & b variables on the basis of value are : ",a==b,"<br>");
+            document.writeln("comparison of a & b variables on the basis of value & datatype are : ",a===b);
+        </script>
+   
+      
+    </body>
+</html>

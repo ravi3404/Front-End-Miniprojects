@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title> Css Flexbox</title>
+        <style>
+            ul{
+                display: flex;
+                justify-content:flex-end;
+                background-color: rgb(209, 143, 143);
+                padding: 0px;
+                box-shadow: 3px,5px,black;
+            }
+            ul li{
+                padding-right: 10px;
+                list-style-type: none;
+                margin-top: 65px;
+                margin-right: 10px;
+
+            }
+            input{
+                margin-right: 1px;
+                width: 500px;
+                height: 30px;
+                margin-top: 60px;
+
+            }
+            button{
+                margin-right: 30px;
+                width:60px;
+                height:30px;
+                margin-top: 60px;
+                background:gainsboro;
+                margin-left: 2px;
+                text-decoration: none;
+            }
+            button:hover{
+                background: gray;
+            }
+            h1{ 
+                margin-right: 220px;
+                margin-top: 50px;
+                margin-left: 10px;
+                background: linear-gradient(to right,red,yellow);
+                -webkit-background-clip: text;
+                color: transparent;
+               
+            }
+              
+            .img1{
+                width: 120px;
+                height:120px;
+                margin-right:5px;
+                margin-top:8px;
+               
+            }
+            a{
+                text-decoration: none;
+            }
+            select{
+                background-color:wheat; 
+            }
+            /* bike assignment css code */
+               .bikes{
+            background: wheat;
+            display: grid;
+            grid-template-columns: repeat(5, 200px);
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            gap:95px ;
+          
+         
+        }
+        .cars{
+            background: wheat;
+            display: grid;
+            grid-template-columns: repeat(5, 200px);
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            gap:95px ;
+        }
+        img{
+            width: 280px;
+            height: 250px; 
+        }
+        .photo:hover{
+            transform:scale(1.2);
+        }
+        </style>
+    </head>
+    <Body>
+        <ul>
+            <img src="d:\Ravi Saini\HTH_LOGO-removebg-preview.png" class="img1" >
+            <h1>HTH Bikes & Cars</h1>
+            <input type="text" placeholder="Search here....!!">
+            <button> <a href="https://www.stonehandicrafts.net/">Search</a></button>
+            <li> <a href="https://www.carandbike.com">Home </a></li>
+            <li>
+             <select>
+                <option>Menu</option>
+                <option value=""https://www.bikewale.com""> Bikes</a></option>
+                <option value="https://www.zigwheels.com">Cars</a></option>
+             </select>
+            </li>
+            <li> <a href="https://www.zigwheels.com/contactus">Contact Us</a> </li>
+            <li><a href="https://www.carandbike.com/about-us">About</a></li>
+        </ul>
+        <!-- bike assignment html code -->
+           <div class="bikes">
+            <div class="photo">
+                <img src="d:\Ravi Saini\bike1.jpg" >
+                Price<br> ₹80,166 - 81,416* 
+            </div>
+            <div class="photo">
+                <img src="d:\Ravi Saini\bike2.jpg" >
+                  Price<br> ₹81,166 - 85,416* 
+            </div>
+            <div class="photo">
+                <img src="d:\Ravi Saini\bike3.jpg" >
+                  Price<br> ₹70,166 - 88,416*
+            </div>
+            <div class="photo">
+                <img src="d:\Ravi Saini\bike4.jpg" >
+                  Price <br>₹85,166 - 90,416*
+            </div>
+            <div class="photo">
+                <img src="d:\Ravi Saini\bike5.jpg" >
+                  Price <br>₹87,166 - 80,416*
+            </div>
+        </div>
+        <div class="cars">
+             <div class="photo">
+               <img src="d:\Ravi Saini\car1.jpg" >
+                 Price <br>₹18,80,166 - 20,81,416*
+             </div>
+              <div class="photo">
+                <img src="d:\Ravi Saini\car2.jpg" >
+                  Price<br> ₹50,80,166 - 55,81,416*
+              </div>
+               <div class="photo">
+                 <img src="d:\Ravi Saini\car3.jpg" >
+                   Price<br> ₹40,80,166 - 45,81,416*
+               </div>
+                <div class="photo">
+                     <img src="d:\Ravi Saini\car4.jpg" >
+                       Price <br> ₹55,80,166 - 60,81,416*
+                </div>
+                 <div class="photo">
+                     <img src="d:\Ravi Saini\car5.jpg" >
+                       Price <br>₹55,80,166 - 62,81,416*
+                 </div>
+
+        </div>
+        
+    </Body>
+</html>

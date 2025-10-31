@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Error Handling in JavaScript</title>
+    </head>
+    <body>
+        <h1>Error Handling in JavaScript</h1>
+        <script>
+            // let a = x;
+            // console.log(x);
+            //  try {
+            //     let a = x;
+            //     console.log(a);
+            // } catch (error) {
+            //     console.log("Error is solved",+error.message);
+            // } finally {
+            //    console.log("Done !!");
+            // }
+
+
+
+
+
+
+
+
+        // function CheckAge(age){
+        //     if(age<18
+        //         throw new Error("Age must be greater then 18..!!");
+        //     }
+        //     return "Granted access..!!";
+        // };
+        // try{
+        //     console.log(CheckAge(20));
+        //     console.log(CheckAge(10));
+
+        // }catch(error){
+        //     console.log("Checking is comopleted..!!"+error.message);
+        // }finally{
+
+        // }
+
+
+
+        
+// who is male or female
+
+        function CheckGender(gender){
+            if(gender=="male"){
+                return "Granted access..!!";
+            }else if(gender=="female"){
+                return "Granted access..!!";
+            }else{
+                throw new Error("Invalid gender..!!");
+            }
+        };
+        try{
+            console.log(CheckGender("male"));
+        }catch(error){
+            console.log("Checking is comopleted..!!"+error.message);
+        }finally{
+
+        }
+
+        </script>
+    </body>
+</html>
